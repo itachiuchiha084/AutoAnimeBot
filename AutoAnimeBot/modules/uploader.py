@@ -42,7 +42,7 @@ async def upload_video(app, msg, file, id, tit, title, eid):
             ]
         )
         caption = f"🎥 **{title}**\n\n{tags}"
-        video = await app.send_video(
+        video = await app.send_document(
             app.UPLOADS_CHANNEL_ID,
             file,
             caption=caption,
